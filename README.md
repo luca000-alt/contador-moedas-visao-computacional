@@ -3,7 +3,11 @@
 Entrega 3 — Protótipo funcional. Detecta moedas de R$ 0,05, 0,10, 0,25, 0,50 e 1,00
 pela webcam (ou em foto), identifica o valor de cada uma e mostra a quantidade e o total em tempo real.
 
-**Integrantes:** Kaio Breno de Freitas Pinho, Lucas Ribeiro de Souza Neves, Kelvin Oliveira dos Santos.
+**Integrantes:**
+
+Kaio Breno de Freitas Pinho - RA 12724130159
+Lucas Ribeiro de Souza Neves - RA 12723130991
+Kelvin Oliveira dos Santos - RA 12724122807
 
 ## Instalação (Python 3.10+)
 ```bash
@@ -12,19 +16,19 @@ pip install -r requirements.txt
 
 ## Execução
 ```bash
-# Webcam em tempo real
-python main.py
 
-# Foto (calibra com UMA moeda de R$ 1,00 sozinha na foto)
-python main.py --imagem foto.jpg --saida resultado.png
+python main.py #Webcam em tempo real
 
-# Foto com escala já conhecida
-python main.py --imagem foto.jpg --px-por-mm 5.0
+python main.py --imagem foto.jpg --saida resultado.png #Foto (calibra com UMA moeda de R$ 1,00 sozinha na foto)
 
-# Demonstração incluída
-python main.py --imagem exemplos/teste_sintetico.png --px-por-mm 5 --saida exemplos/resultado.png
+python main.py --imagem foto.jpg --px-por-mm 5.0 #Foto com escala já conhecida
+
+python main.py --imagem exemplos/teste_sintetico.png --px-por-mm 5 --saida exemplos/resultado.png #Demonstração incluída
 ```
-**Webcam:** coloque UMA moeda de R$ 1,00 sozinha no quadro e tecle `c` para calibrar;
+
+**Webcam:**
+
+coloque UMA moeda de R$ 1,00 sozinha no quadro e tecle `c` para calibrar;
 depois espalhe as demais moedas. Tecle `q` para sair. Se mover a câmera, calibre de novo.
 
 ## Como funciona

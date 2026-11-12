@@ -1,6 +1,5 @@
 import argparse
 import sys
-
 import cv2
 
 from src.calibracao import calibrar_com_moeda_de_referencia
